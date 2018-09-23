@@ -1,0 +1,10 @@
+class parent {
+	static String outString = "Hello world";
+}
+
+public class HelloWorld extends parent {
+	public static void main(String args[]) {
+		System.out.println(HelloWorld.outString + "!");
+	}
+}
+
