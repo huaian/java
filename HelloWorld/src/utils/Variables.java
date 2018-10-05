@@ -15,6 +15,7 @@ public class Variables {
 		String stringVariable = new String("字符串");
 		// char
 		char charVariable = 'C';
+		// print logs
 		System.out.println(intVariable + longVariable + doubleVariable + floatVariable);
 		System.out.println(charVariable);
 		System.out.println("" + booleanVariale + arrayVariable + stringVariable + "");
