@@ -9,6 +9,7 @@ public class Generics {
 		genericsArrayList.add(new Integer(2));
 		genericsArrayList.add(new Integer(3));
 		genericsArrayList.add(new Integer(4));
+		genericsArrayList.add(5);
 		for (Integer i : genericsArrayList) {
 			System.out.println(i);
 		}
