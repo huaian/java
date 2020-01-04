@@ -3,7 +3,6 @@ package utils;
 
 public class Annotation {
 	@Deprecated
-//	@Override
 	@SuppressWarnings(value = { "unchecked" })
 	void testAnnotation  () {
 		System.out.println("annotation");
