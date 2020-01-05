@@ -3,6 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: HelloWorld
 Bundle-SymbolicName: HelloWorld
 Bundle-Version: 1.0.0.qualifier
+Main-Class: examples.fibonacci
 Export-Package: examples,
  uIAuto,
  utils
