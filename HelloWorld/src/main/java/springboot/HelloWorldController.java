@@ -18,4 +18,10 @@ public class HelloWorldController {
     public String sayHello() {
         return "Hello World Developer!!!";
     }
+
+    @RequestMapping("/auth")
+    @ResponseBody
+    public String auth() {
+        return "auth check";
+    }
 }
