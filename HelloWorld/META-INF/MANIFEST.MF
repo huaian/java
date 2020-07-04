@@ -7,4 +7,5 @@ Main-Class: examples.fibonacci
 Export-Package: examples,
  uIAuto,
  utils
-Import-Package: org.slf4j
+Import-Package: org.slf4j,
+ org.hamcrest
