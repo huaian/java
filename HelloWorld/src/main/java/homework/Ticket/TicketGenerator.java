@@ -14,21 +14,24 @@ public class TicketGenerator {
     public static void main(String[] args) {
         IdGenerator generator = new IdGenerator();
         int ticketNumber = 0;
-        try {
-            ticketNumber = generator.getTicketNumber(CustomerType.NORMAL);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        Ticket normalTicket = new Ticket(ticketNumber, CustomerType.NORMAL);
-        System.out.println(normalTicket);
+        for (int i = 0; i <= 1000; i++) {
+            int normalTicketNumber = 0;
+            try {
+                normalTicketNumber = generator.getTicketNumber(CustomerType.NORMAL);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            Ticket normalTicket = new Ticket(normalTicketNumber, CustomerType.NORMAL);
+            System.out.println(normalTicket);
 
-        try {
-            int vipTicketNumber = generator.getTicketNumber(CustomerType.VIP);
-        } catch (Exception e) {
-            e.printStackTrace();
+            int vipTicketNumber = 0;
+            try {
+                vipTicketNumber = generator.getTicketNumber(CustomerType.VIP);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            Ticket vipTicket = new Ticket(vipTicketNumber, CustomerType.VIP);
+            System.out.println(vipTicket);
         }
-        Ticket vipTicket = new Ticket(ticketNumber, CustomerType.VIP);
-        System.out.println(vipTicket);
-
     }
 }
