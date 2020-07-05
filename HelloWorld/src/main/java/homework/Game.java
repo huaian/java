@@ -48,6 +48,7 @@ public class Game {
         if (player.isInPrison) {
             if (isPair(gambleNumber)) {
                System.out.println(player + "get out of prison");
+               freeFromPrison(player);
                answerAndChange(player, questions, gambleNumber);
             } else {
                 System.out.println(player + "still stay in prison");
@@ -57,6 +58,9 @@ public class Game {
         }
     }
 
+    private void freeFromPrison(Player player) {
+        player.isInPrison = false;
+    }
 
 
     private void answerAndChange(Player player, ArrayList<Question> questions, int gambleNumber) {
